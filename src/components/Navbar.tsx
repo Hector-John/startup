@@ -9,8 +9,8 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="fixed top-4 left-0 right-0 z-50">
-      <nav className="mx-auto max-w-6xl px-6 py-3 bg-[#10141c]/80 backdrop-blur-lg border border-gray-700/50 rounded-xl shadow-lg">
+    <div className="fixed top-4 left-0 right-0 z-50 mx-auto animate-fade-in ">
+      <nav className="mx-auto max-w-6xl px-6 py-2 bg-[#111111]/90 backdrop-blur-lg border border-gray-700/50 rounded-xl shadow-lg">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="logo">
@@ -25,7 +25,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3">
             <Link
               href="/"
               className={`px-3 py-2 rounded-md transition-all ${
@@ -68,9 +68,13 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <Link href="/contact">
+          <a
+            href="https://calendly.com/hakheem67/30min?utm_source=navbar&utm_medium=button&utm_campaign=quote_meeting"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button variant="secondary">Schedule Meeting</Button>
-          </Link>
+          </a>
         </div>
       </nav>
     </div>

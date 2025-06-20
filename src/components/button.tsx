@@ -31,7 +31,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
     const variantStyles = {
       primary:
-        "bg-gradient-to-r from-blue-600 to-cyan-500 text-white hover:from-blue-500 hover:to-cyan-400 shadow-md hover:shadow-lg active:opacity-90",
+        "bg-gradient-to-r from-blue-600 to-cyan-500 text-white hover:from-blue-500 hover:to-cyan-400 shadow-md hover:shadow-lg active:opacity-90", 
       secondary:
         "bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:bg-blue-500/20 hover:text-blue-300 hover:border-blue-400/30",
       outline:
@@ -41,7 +41,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       destructive:
         "bg-gradient-to-r from-red-500 to-red-400 text-white hover:from-red-600 hover:to-red-500 shadow-md hover:shadow-lg active:opacity-90",
       glow: "bg-gradient-to-r from-blue-500 to-cyan-400 text-white hover:from-blue-600 hover:to-cyan-500 shadow-lg hover:shadow-blue-500/40 active:opacity-90",
-      link: "text-blue-400 underline-offset-4 hover:underline hover:text-blue-300 bg-transparent border-none shadow-none p-0 h-auto",
+      link: "text-blue-400 underline-offset-4 hover:underline hover:text-blue-300 bg-transparent border-none shadow-none p-0 h-auto ",
     };
 
     const sizeStyles = {
