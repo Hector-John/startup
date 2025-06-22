@@ -46,11 +46,11 @@ const HeroSection = () => {
         variants={staggerContainer}
         initial="hidden"
         animate="show"
-        className="relative z-20 h-full flex flex-col items-center justify-center text-center px-4 lg:mt-12 sm:px-6 lg:px-8 max-w-5xl mx-auto"
+        className="relative z-20 h-full flex flex-col items-center justify-center text-center px-4 mt-24 lg:mt-12 sm:px-6 lg:px-8 max-w-5xl mx-auto"
       >
         {/* Pill */}
         <motion.div variants={fadeIn}>
-          <span className="rounded-full inline-flex gap-2 px-4 py-2 bg-blue-500/10 text-blue-400 text-sm font-medium mb-8 pointer-events-none ">
+          <span className="rounded-full inline-flex gap-2 px-4 py-2 bg-blue-500/10 text-blue-400 text-sm font-medium lg:mb-8 mb-3 pointer-events-none ">
             <span className="text-yellow-400">✨</span> Currently accepting new
             projects
           </span>
@@ -60,8 +60,7 @@ const HeroSection = () => {
         <div className="space-y-6">
           <motion.div variants={fadeIn}>
             <h1 className="font-heading text-gradient text-4xl md:text-5xl lg:text-7xl font-bold leading-tight md:leading-[1.25] overflow-visible">
-              Smart, Scalable, and
-              <br className="hidden md:block" />
+              Smart, Scalable, and <br className="hidden md:block" />
               Future-ready solutions.
             </h1>
           </motion.div>

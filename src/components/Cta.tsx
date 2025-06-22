@@ -1,6 +1,7 @@
 import { Mail, Phone } from "lucide-react";
 import { companyName } from "../lib/config";
 import Button from "./button";
+import QuoteRequestForm from "./quote";
 
 const Cta = () => {
   return (
@@ -59,7 +60,10 @@ const Cta = () => {
           </div>
         </div>
 
-        <div className="">{/* <Form /> */}</div>
+        <div className="">
+          {/* Form */}
+          <QuoteRequestForm />
+        </div>
       </div>
     </div>
   );

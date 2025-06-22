@@ -7,7 +7,7 @@ const Pricing = () => {
     <div className="padded py-20 min-h-screen flex flex-col justify-center">
       {/* Header */}
       <div className="w-full pt-8 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 lg:gap-8 mb-16">
-        <h1 className="font-heading text-gradient text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-tight">
+        <h1 className="font-heading text-gradient text-4xl md:text-5xl lg:text-5xl font-medium leading-tight">
           Services
         </h1>
         <p className="text-gray-400 text-sm sm:text-base  leading-relaxed">

@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
       <section className="mx-auto padded">
         {/* Header */}
         <div className="space-y-6 text-center mb-14">
-          <h1 className="font-heading text-gradient max-w-4xl text-2xl md:text-3xl lg:text-5xl font-medium leading-[1.5] mx-auto">
+          <h1 className="font-heading text-gradient max-w-4xl text-4xl md:text-5xl lg:text-5xl font-medium leading-[1.5] mx-auto">
             Why choose us?
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">

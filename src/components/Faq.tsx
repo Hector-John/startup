@@ -8,7 +8,7 @@ const Faq = () => {
     <div className="padded lg:min-h-screen lg:pt-20">
       {/* Header Texts */}
       <div className="space-y-6 text-center mb-8 mt-6">
-        <h1 className="font-heading text-gradient pb-2 max-w-4xl text-2xl md:text-3xl lg:text-5xl font-medium leading-[1.5] mx-auto">
+        <h1 className="font-heading text-gradient pb-2 max-w-4xl text-4xl md:text-5xl lg:text-5xl font-medium leading-[1.5] mx-auto">
           Your questions, answered
         </h1>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto">

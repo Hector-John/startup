@@ -9,11 +9,11 @@ const TechRange = () => {
     <div className="padded mx-auto lg:min-h-screen py-12">
       {/* Header texts */}
       <div className="space-y-8 text-center mb-14 mt-10">
-        <h1 className="font-heading pb-2 text-gradient max-w-4xl text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium leading-[1.5] mx-auto">
-          Our team offers a wide
-          <br className="hidden md:block" />
-          range of services
+        <h1 className="font-heading text-gradient max-w-4xl pt-2 text-4xl md:text-5xl lg:text-5xl font-bold leading-tight md:leading-[1.25] mx-auto overflow-visible">
+          Our team offers a <br className="hidden md:block" />
+          wide range of services
         </h1>
+
         <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
           From landing pages to full websites, UI/UX to ongoing updates, our
           expert designers bring your vision to life, hassle-free.

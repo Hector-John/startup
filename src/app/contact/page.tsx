@@ -1,8 +1,15 @@
+import QuoteRequestForm from '@/components/quote'
 import React from 'react'
 
 const ContactPage = () => {
   return (
-    <div>ContactPage</div>
+    <div>
+
+
+
+<QuoteRequestForm />
+
+    </div>
   )
 }
 
