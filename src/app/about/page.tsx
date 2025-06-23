@@ -60,7 +60,7 @@ Everything we create is built for clarity, performance, and long-term value."
 
 
         {/* Stats Section */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-6 py-3">
+        <div className="w-full hidden md:grid grid-cols-1 sm:grid-cols-3 gap-6 py-3">
           {/* Stat 1 */}
           <div className="flex gap-4 items-center justify-center p-4 w-full">
             <div className="p-5 rounded-full border border-gray-800 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 flex-shrink-0">

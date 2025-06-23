@@ -1,14 +1,11 @@
+import Cta from '@/components/Cta'
 import QuoteRequestForm from '@/components/quote'
 import React from 'react'
 
 const ContactPage = () => {
   return (
-    <div>
-
-
-
-<QuoteRequestForm />
-
+    <div className='lg:min-h-screen my-20 ' >
+      <Cta />
     </div>
   )
 }

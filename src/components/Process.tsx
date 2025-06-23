@@ -112,7 +112,7 @@ const Process = () => {
                   <h3 className="text-xl font-semibold text-white">
                     {step.title}
                   </h3>
-                  <span className="text-sm text-blue-400 bg-white/10 border border-white/10 px-2 py-0.5 rounded-full">
+                  <span className="text-sm hidden md:flex text-blue-400 bg-white/10 border border-white/10 px-2 py-0.5 rounded-full">
                     {step.outcome}
                   </span>
                 </div>

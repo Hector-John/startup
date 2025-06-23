@@ -68,7 +68,7 @@ const ProjectsPage = () => {
                     ))}
                   </div>
 
-                  <Button asChild variant='secondary' className='mt-4'>
+                  <Button variant='secondary' className='mt-4'>
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
                       View Project
                     </a>
@@ -86,33 +86,33 @@ const ProjectsPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {caseStudies.map((study: Project) => (
               <article key={study.id} className="relative group h-[26rem] overflow-hidden rounded-lg">
-                  {/* Background image */}
-                  <Image
-                    src={study.img || "/placeholder.png"}
-                    alt={study.title}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
+                {/* Background image */}
+                <Image
+                  src={study.img || "/placeholder.png"}
+                  alt={study.title}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
 
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div>
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div>
 
-                  {/* Content */}
-                  <div className="absolute bottom-0 z-10 p-6">
-                    <time
-                      dateTime={getRandomDate()}
-                      className="block text-xs text-white/70 mb-1"
-                    >
-                      {getRandomDate()}
-                    </time>
-                    <h3 className="text-xl font-semibold text-white">{study.title}</h3>
-                    <p className="text-sm text-gray-300 mt-2">{study.description}</p>
-                <Link href={study.link} >
-                    <Button asChild className="mt-4">
-                      <span>View Case Study</span>
+                {/* Content */}
+                <div className="absolute bottom-0 z-10 p-6">
+                  <time
+                    dateTime={getRandomDate()}
+                    className="block text-xs text-white/70 mb-1"
+                  >
+                    {getRandomDate()}
+                  </time>
+                  <h3 className="text-xl font-semibold text-white">{study.title}</h3>
+                  <p className="text-sm text-gray-300 mt-2">{study.description}</p>
+                  <Link href={study.link} passHref legacyBehavior>
+                    <Button className="mt-4">
+                      View Case Study
                     </Button>
-                </Link>
-                  </div>
+                  </Link>
+                </div>
               </article>
             ))}
           </div>

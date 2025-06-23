@@ -13,7 +13,7 @@ const ImageSlider = () => {
   const carouselImages = [
     { src: "/digital_marketing.png", alt: "Digital Marketing" },
     { src: "/Homepage.png", alt: "Sixpoints Victoria" },
-    { src: "/digital_marketing.png", alt: "Social Media" },
+    { src: "/acorn.png", alt: "Acorn Interior Designs " },
     { src: "/digital_marketing.png", alt: "Content Creation" },
     { src: "/digital_marketing.png", alt: "PPC Advertising" },
     { src: "/digital_marketing.png", alt: "Email Marketing" },

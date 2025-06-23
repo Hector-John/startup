@@ -143,8 +143,8 @@ export const developedProjects = [
     title: "East Side Street Wear",
     category: "Web Apps",
     tech: ["React", "MongoDB", "PayPal", "M-Pesa"],
-    img: "",
-    link: "https://example.com",
+    img: "/eastside.png",
+    link: "https://east-side-urban-frontend.onrender.com/",
     description:
       "A fully functional fashion e-commerce website offering clothes, shoes, and jewelry. Built using the MERN stack, the platform supports secure payments via PayPal and M-Pesa, providing a smooth and responsive shopping experience for modern streetwear lovers.",
   },
@@ -154,7 +154,7 @@ export const developedProjects = [
     category: "Web Apps",
     tech: ["React", "MongoDB", "Stripe"],
     img: "",
-    link: "https://example.com",
+    link: "https://trendi-fy.netlify.app/",
     description:
       "An exclusive footwear delivery platform built with the MERN stack and Stripe for payments. Users can browse trending sneakers, order instantly, and enjoy seamless delivery — built for speed, style, and simplicity.",
   },
@@ -163,7 +163,7 @@ export const developedProjects = [
     title: "MERN Authentication",
     category: "Web Apps",
     tech: ["MongoDB", "Express", "React", "Node.js"],
-    img: "",
+    img: "/auth.png",
     link: "https://example.com",
     description:
       "A feature-rich authentication system showcasing Kheem Tech’s backend expertise. It includes secure user login, email verification, password reset flows, and demonstrates how we build scalable, secure auth logic for any application.",
