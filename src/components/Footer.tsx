@@ -20,17 +20,17 @@ const Footer = () => {
             <p className="text-sm leading-relaxed mb-6">
               Building the digital future with cutting-edge technology and exceptional user experiences.
             </p>
-            
+
             {/* Newsletter */}
             <div className="mb-6">
               <h4 className="text-white text-sm font-medium mb-3">Stay updated</h4>
-              <div className="flex">
-                <input 
-                  type="email" 
-                  placeholder="Your email" 
-                  className="bg-gray-900 text-sm px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 w-full"
+              <div className="flex w-[80%] min-h-[4vh]  ">
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  className="bg-gray-900 text-sm px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 w-full h-full"
                 />
-                <button className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-4 py-2 rounded-r-lg text-sm font-medium hover:opacity-90 transition-opacity">
+                <button className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-4 py-2 rounded-r-lg text-sm font-medium hover:opacity-90 transition-opacity h-full ">
                   <FaArrowRight />
                 </button>
               </div>
@@ -115,7 +115,7 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4 text-lg">Connect</h3>
             <p className="text-sm mb-6">Let's build the future together.</p>
-            
+
             <div className="flex space-x-4 mb-6">
               <Link href="#" className="hover:text-white transition p-2 rounded-full bg-gray-900 hover:bg-gray-800">
                 <FaTwitter className="text-lg" />
@@ -127,23 +127,23 @@ const Footer = () => {
                 <FaGithub className="text-lg" />
               </Link>
             </div>
-            
+
             <div className="text-sm">
               <p className="mb-1">hello@{companyName.toLowerCase()}.com</p>
-              <p>+1 (555) 123-4567</p>
+              <p>+254 769403162</p>
             </div>
           </div>
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-800 my-12"></div>
+        <div className="border-t border-gray-800 my-8"></div>
 
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm">
-          <div className="mb-4 md:mb-0">
+          <div className="mb-6 md:mb-0">
             &copy; {new Date().getFullYear()} {companyName}. All rights reserved.
           </div>
-          
+
           <div className="flex space-x-6">
             <Link href="/privacy" className="hover:text-white transition">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition">Terms of Service</Link>
