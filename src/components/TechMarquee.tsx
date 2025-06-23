@@ -68,8 +68,8 @@ export function TechMarquee() {
           ))}
         </Marquee>
         {/* Gradient edges */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#111111] via-[#111111] to-transparent"></div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#111111] via-[#111111] to-transparent"></div>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#090C14] via-[#090C14] to-transparent"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#090C14] via-[#090C14] to-transparent"></div>
       </div>
 
       {/* Dev Stack*/}
@@ -80,8 +80,8 @@ export function TechMarquee() {
           ))}
         </Marquee>
         {/* Gradient Edges */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#111111] via-[#111111] to-transparent"></div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#111111] via-[#111111] to-transparent"></div>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#090C14] via-[#090C14] to-transparent"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#090C14] via-[#090C14] to-transparent"></div>
       </div>
     </div>
   );

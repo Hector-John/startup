@@ -9,7 +9,7 @@ const TechRange = () => {
     <div className="padded mx-auto lg:min-h-screen py-12">
       {/* Header texts */}
       <div className="space-y-8 text-center mb-14 mt-10">
-        <h1 className="font-heading text-gradient max-w-4xl pt-2 text-4xl md:text-5xl lg:text-5xl font-bold leading-tight md:leading-[1.25] mx-auto overflow-visible">
+        <h1 className="font-heading text-gradient max-w-4xl pb-2 text-4xl md:text-5xl lg:text-5xl font-bold leading-tight md:leading-[1.25] mx-auto overflow-visible">
           Our team offers a <br className="hidden md:block" />
           wide range of services
         </h1>

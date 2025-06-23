@@ -1,106 +1,22 @@
 import React from "react";
 import Button from "@/components/button";
-import {
-  FaLaptopCode,
-  FaMobileAlt,
-  FaPencilRuler,
-  FaCreditCard,
-  FaPaintBrush,
-  FaBullhorn,
-} from "react-icons/fa";
 import ServicesCta from "./ServicesCta";
 import Process from "@/components/Process";
 import Heading from "@/components/ui/header";
+import { services } from "@/lib/config";
 
-
-const services = [
-  {
-    title: "Web Development",
-    icon: <FaLaptopCode className="text-xl text-blue-400" />,
-    description: "Custom web apps tailored to your needs.",
-    points: [
-      "Modern, scalable stack",
-      "Fully responsive designs",
-      "Optimized for speed & SEO",
-      "Built for growth",
-    ],
-  },
-  {
-    title: "Software Development",
-    icon: <FaMobileAlt className="text-xl text-blue-400" />,
-    description: "Robust backend logic for modern businesses.",
-    points: [
-      "Full-stack solutions",
-      "Secure data architecture",
-      "Process automation",
-      "Cloud-native builds",
-    ],
-  },
-  {
-    title: "UI/UX Design",
-    icon: <FaPencilRuler className="text-xl text-blue-400" />,
-    description: "Interfaces that are beautiful, intuitive, and fast.",
-    points: [
-      "Figma-based workflows",
-      "Component-level UI kits",
-      "User journey mapping",
-      "Prototyping & testing",
-    ],
-  },
-  {
-    title: "Payment Integrations",
-    icon: <FaCreditCard className="text-xl text-blue-400" />,
-    description: "Seamless, secure payments made simple.",
-    points: [
-      "Stripe, PayPal, Flutterwave",
-      "Recurring billing support",
-      "Custom checkout flows",
-      "PCI-compliant practices",
-    ],
-  },
-  {
-    title: "Visual & Graphic Design",
-    icon: <FaPaintBrush className="text-xl text-blue-400" />,
-    description: "Brand visuals and creatives that stand out.",
-    points: [
-      "Logo & identity design",
-      "Brand kits & decks",
-      "Illustration support",
-      "Marketing asset design",
-    ],
-  },
-  {
-    title: "Digital Strategy",
-    icon: <FaBullhorn className="text-xl text-blue-400" />,
-    description: "A clear plan to build presence and traffic.",
-    points: [
-      "SEO-driven structures",
-      "Social campaign support",
-      "Analytics-based improvement",
-      "Long-term growth systems",
-    ],
-  },
-];
 
 const ServicesPage: React.FC = () => {
   return (
     <div className='mb-8' >
 
-<Heading
-  bgImage="/servicesCta.png"
-  title={
-    <>
-    Services
-    </>
-  }
-  subtitle="From idea to deployment, we handle the heavy lifting, smart design, efficient code, and reliable delivery."
-/>
-
-
+      <Heading
+        bgImage="/servicesCta.png"
+        title={ <> Services </> }
+        subtitle="From idea to deployment, we handle the heavy lifting, smart design, efficient code, and reliable delivery."
+      />
 
       <section className=" mx-auto">
-    
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24 padded ">
           {services.map((service, index) => (
             <div
@@ -131,9 +47,8 @@ const ServicesPage: React.FC = () => {
             </div>
           ))}
         </div>
-
-      <ServicesCta/>
-<Process/>
+        <ServicesCta />
+        <Process />
 
       </section>
     </div>

@@ -133,7 +133,7 @@ const Pricing = () => {
           <Button variant="secondary" className="w-full">
             Request a quote
           </Button>
-        </div>
+        </div> 
 
         {/* Column 2 - Featured */}
         <div className="card p-8 rounded-2xl bg-gray-900 border border-blue-500/20 hover:border-blue-500/40 transition-all h-full flex flex-col justify-between relative overflow-hidden">

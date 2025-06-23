@@ -23,7 +23,7 @@ const SellingPoints = () => {
         {/* Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center">
           {/* Card 1 */}
-          <div className="card h-[400px] max-w-sm w-full mx-auto flex flex-col justify-between bg-[#111111] p-6 rounded-xl shadow-lg shadow-black/30 hover:shadow-black/40 transition-shadow">
+          <div className="card h-[400px] max-w-sm w-full mx-auto flex flex-col justify-between ">
             <div>
               <h3 className="text-white text-xl font-semibold mb-2">
                 Scale as you grow
@@ -34,7 +34,7 @@ const SellingPoints = () => {
               </p>
             </div>
 
-            <div className="mt-4 w-full h-44 relative rounded-lg overflow-hidden shadow-md">
+            <div className="mt-4 w-full h-44 relative rounded-lg overflow-hidden ">
               <Image
                 src="/real_deskmobile.png"
                 alt="Desktop - Mobile Layout"
@@ -46,7 +46,7 @@ const SellingPoints = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="card h-[400px] max-w-sm w-full mx-auto flex flex-col justify-between bg-[#111111] p-6 rounded-xl shadow-lg shadow-black/30 hover:shadow-black/40 transition-shadow">
+          <div className="card h-[400px] max-w-sm w-full mx-auto flex flex-col justify-between ">
             <div className="w-[92%] mx-auto">
               <h3 className="text-white text-xl font-semibold mb-2">
                 Blazing-fast delivery
@@ -83,7 +83,7 @@ const SellingPoints = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="card h-[400px] max-w-sm w-full mx-auto flex flex-col justify-between bg-[#111111] p-6 rounded-xl shadow-lg shadow-black/30 hover:shadow-black/40 transition-shadow">
+          <div className="card h-[400px] max-w-sm w-full mx-auto flex flex-col justify-between  ">
             <div>
               <h3 className="text-white text-xl font-semibold mb-2">
                 Problems → Solutions → Results

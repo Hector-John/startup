@@ -1,13 +1,83 @@
 "use client";
 
-import { processSteps } from "@/lib/config";
+import { FaSearch, FaMapSigns, FaPalette, FaCode, FaRocket, FaLifeRing } from "react-icons/fa";
 import { cn } from "@/lib/utils";
+
+export const processSteps = [
+  {
+    title: "Discovery",
+    color: "from-blue-500 to-blue-700",
+    icon: FaSearch,
+    description:
+      "We'll start by understanding your goals, challenges, and audience, the foundation of everything built afterward.",
+    bullets: [
+      "Clarifying vision and objectives",
+      "Reviewing competitors & inspiration",
+    ],
+    outcome: "Clarity & Alignment",
+  },
+  {
+    title: "Planning",
+    color: "from-purple-500 to-purple-700",
+    icon: FaMapSigns,
+    description:
+      "Then define the roadmap: tech stack, architecture, deliverables, and timelines. All structured for clarity.",
+    bullets: [
+      "Project breakdown and milestones",
+      "Selecting tools & approaches",
+    ],
+    outcome: "Structured Execution Plan",
+  },
+  {
+    title: "Design",
+    color: "from-teal-500 to-teal-700",
+    icon: FaPalette,
+    description:
+      "Then translate ideas into sleek, intuitive designs, interfaces that not only look good, but feel great.",
+    bullets: [
+      "Wireframes & prototyping",
+      "Design systems & visual language",
+    ],
+    outcome: "Visual Direction",
+  },
+  {
+    title: "Development",
+    color: "from-indigo-500 to-indigo-700",
+    icon: FaCode,
+    description:
+      "We then craft clean, scalable code built for performance, responsiveness, and seamless integration.",
+    bullets: [
+      "Frontend + backend logic",
+      "API integrations & automation",
+    ],
+    outcome: "Working Product",
+  },
+  {
+    title: "Launch",
+    color: "from-orange-500 to-orange-700",
+    icon: FaRocket,
+    description:
+      "Deploy with precision, ensuring stability, performance, and peace of mind from day one.",
+    bullets: ["Pre-launch testing", "Zero-downtime deployment"],
+    outcome: "Live Deployment",
+  },
+  {
+    title: "Support",
+    color: "from-pink-500 to-pink-700",
+    icon: FaLifeRing,
+    description:
+      "Tech evolves. Stay ahead with continuous maintenance, feature upgrades, and ongoing improvements.",
+    bullets: ["Bug fixes & quick turnarounds", "New features & optimizations"],
+    outcome: "Ongoing Growth",
+  },
+];
+
 
 const Process = () => {
   return (
     <section className="py-20 px-6 md:px-12 max-w-6xl mx-auto">
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-gradient">
+        <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold text-gradient">
           How We Work
         </h2>
         <p className="text-gray-400 mt-4 max-w-2xl mx-auto">

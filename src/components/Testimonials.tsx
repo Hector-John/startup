@@ -2,9 +2,7 @@
 
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
-
 import { testimonialData } from "../lib/config";
-import { CompanyMarquee } from "./CompanyMarquee";
 
 const Testimonials = () => {
   return (
@@ -83,7 +81,6 @@ const Testimonials = () => {
         ))}
       </div>
 
-      <CompanyMarquee marqueeSpeed={70} />
     </div>
   );
 };

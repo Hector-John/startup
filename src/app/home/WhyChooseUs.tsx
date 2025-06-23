@@ -38,7 +38,7 @@ const WhyChooseUs = () => {
     <div className="lg:min-h-screen py-16">
       <section className="mx-auto padded">
         {/* Header */}
-        <div className="space-y-6 text-center mb-14">
+        <div className="space-y-6 text-center mt-8 mb-14">
           <h1 className="font-heading text-gradient max-w-4xl text-4xl md:text-5xl lg:text-5xl font-medium leading-[1.5] mx-auto">
             Why choose us?
           </h1>
@@ -69,15 +69,15 @@ const WhyChooseUs = () => {
                 </div>
 
                 {/* Card container */}
-                <div className="p-6 rounded-xl bg-[#121212] border border-gray-800 hover:border-gray-700 transition-colors h-full pt-10">
+                <div className="p-4 card h-full pt-10">
                   <div className="flex flex-col items-center">
-                    <h3 className="text-white text-xl font-semibold mb-2 pt-4">
+                    <h3 className="text-white text-xl font-semibold mb-1 pt-4">
                       {title}
                     </h3>
-                    <span className="bg-gray-800 text-cyan-400 text-sm font-medium px-2 py-1 rounded mb-3">
+                    <span className="bg-blue-400/50 text-linear text-sm font-medium px-3 py-1 rounded-xl">
                       {highlight}
                     </span>
-                    <p className="text-gray-400 leading-relaxed text-center">
+                    <p className="text-gray-400 leading-relaxed text-center my-3 ">
                       {description}
                     </p>
                   </div>

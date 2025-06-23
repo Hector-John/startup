@@ -1,11 +1,11 @@
 import { FaShoePrints, FaTshirt, FaHandsHelping } from "react-icons/fa";
 import {
-  FaSearch,
-  FaMapSigns,
-  FaPalette,
-  FaCode,
-  FaRocket,
-  FaLifeRing,
+  FaLaptopCode,
+  FaMobileAlt,
+  FaPencilRuler,
+  FaCreditCard,
+  FaPaintBrush,
+  FaBullhorn,
 } from "react-icons/fa";
 
 export const companyName = "Kheem Tech";
@@ -35,7 +35,7 @@ export const testimonialData = [
     company: "M.Y.T.O",
     icon: <FaHandsHelping />,
     image: "/profile6.png",
-   review: `Kheem Tech helped us reimagine how our organization connects online. They transformed our outdated site into a modern, user-friendly platform and integrated a donation system that works seamlessly. Since the launch, we’ve seen a real boost in donor trust, smoother internal processes, and a measurable increase in contributions and engagement.`,
+    review: `Kheem Tech helped us reimagine how our organization connects online. They transformed our outdated site into a modern, user-friendly platform and integrated a donation system that works seamlessly. Since the launch, we’ve seen a real boost in donor trust, smoother internal processes, and a measurable increase in contributions and engagement.`,
     rating: 5,
   },
 ];
@@ -68,71 +68,157 @@ export const faqData = [
   },
 ];
 
-export const processSteps = [
+export const services = [
   {
-    title: "Discovery",
-    color: "from-blue-500 to-blue-700",
-    icon: FaSearch,
-    description:
-      "We'll start by understanding your goals, challenges, and audience, the foundation of everything built afterward.",
-    bullets: [
-      "Clarifying vision and objectives",
-      "Reviewing competitors & inspiration",
+    title: "Web Development",
+    icon: <FaLaptopCode className="text-xl text-blue-400" />,
+    description: "Custom web apps tailored to your needs.",
+    points: [
+      "Modern, scalable stack",
+      "Fully responsive designs",
+      "Optimized for speed & SEO",
+      "Built for growth",
     ],
-    outcome: "Clarity & Alignment",
   },
   {
-    title: "Planning",
-    color: "from-purple-500 to-purple-700",
-    icon: FaMapSigns,
-    description:
-      "Then define the roadmap: tech stack, architecture, deliverables, and timelines. All structured for clarity.",
-    bullets: [
-      "Project breakdown and milestones",
-      "Selecting tools & approaches",
+    title: "Software Development",
+    icon: <FaMobileAlt className="text-xl text-blue-400" />,
+    description: "Robust backend logic for modern businesses.",
+    points: [
+      "Full-stack solutions",
+      "Secure data architecture",
+      "Process automation",
+      "Cloud-native builds",
     ],
-    outcome: "Structured Execution Plan",
   },
   {
-    title: "Design",
-    color: "from-teal-500 to-teal-700",
-    icon: FaPalette,
-    description:
-      "Then translate ideas into sleek, intuitive designs, interfaces that not only look good, but feel great.",
-    bullets: [
-      "Wireframes & prototyping",
-      "Design systems & visual language",
+    title: "UI/UX Design",
+    icon: <FaPencilRuler className="text-xl text-blue-400" />,
+    description: "Interfaces that are beautiful, intuitive, and fast.",
+    points: [
+      "Figma-based workflows",
+      "Component-level UI kits",
+      "User journey mapping",
+      "Prototyping & testing",
     ],
-    outcome: "Visual Direction",
   },
   {
-    title: "Development",
-    color: "from-indigo-500 to-indigo-700",
-    icon: FaCode,
-    description:
-      "We then craft clean, scalable code built for performance, responsiveness, and seamless integration.",
-    bullets: [
-      "Frontend + backend logic",
-      "API integrations & automation",
+    title: "Payment Integrations",
+    icon: <FaCreditCard className="text-xl text-blue-400" />,
+    description: "Seamless, secure payments made simple.",
+    points: [
+      "Stripe, PayPal, Flutterwave",
+      "Recurring billing support",
+      "Custom checkout flows",
+      "PCI-compliant practices",
     ],
-    outcome: "Working Product",
   },
   {
-    title: "Launch",
-    color: "from-orange-500 to-orange-700",
-    icon: FaRocket,
-    description:
-      "Deploy with precision, ensuring stability, performance, and peace of mind from day one.",
-    bullets: ["Pre-launch testing", "Zero-downtime deployment"],
-    outcome: "Live Deployment",
+    title: "Visual & Graphic Design",
+    icon: <FaPaintBrush className="text-xl text-blue-400" />,
+    description: "Brand visuals and creatives that stand out.",
+    points: [
+      "Logo & identity design",
+      "Brand kits & decks",
+      "Illustration support",
+      "Marketing asset design",
+    ],
   },
   {
-    title: "Support",
-    color: "from-pink-500 to-pink-700",
-    icon: FaLifeRing,
+    title: "Digital Strategy",
+    icon: <FaBullhorn className="text-xl text-blue-400" />,
+    description: "A clear plan to build presence and traffic.",
+    points: [
+      "SEO-driven structures",
+      "Social campaign support",
+      "Analytics-based improvement",
+      "Long-term growth systems",
+    ],
+  },
+];
+
+export const developedProjects = [
+  {
+    id: 1,
+    title: "East Side Street Wear",
+    category: "Web Apps",
+    tech: ["React", "MongoDB", "PayPal", "M-Pesa"],
+    img: "",
+    link: "https://example.com",
     description:
-      "Tech evolves. Stay ahead with continuous maintenance, feature upgrades, and ongoing improvements.",
-    bullets: ["Bug fixes & quick turnarounds", "New features & optimizations"],
-    outcome: "Ongoing Growth",
+      "A fully functional fashion e-commerce website offering clothes, shoes, and jewelry. Built using the MERN stack, the platform supports secure payments via PayPal and M-Pesa, providing a smooth and responsive shopping experience for modern streetwear lovers.",
+  },
+  {
+    id: 2,
+    title: "Trendify",
+    category: "Web Apps",
+    tech: ["React", "MongoDB", "Stripe"],
+    img: "",
+    link: "https://example.com",
+    description:
+      "An exclusive footwear delivery platform built with the MERN stack and Stripe for payments. Users can browse trending sneakers, order instantly, and enjoy seamless delivery — built for speed, style, and simplicity.",
+  },
+  {
+    id: 3,
+    title: "MERN Authentication",
+    category: "Web Apps",
+    tech: ["MongoDB", "Express", "React", "Node.js"],
+    img: "",
+    link: "https://example.com",
+    description:
+      "A feature-rich authentication system showcasing Kheem Tech’s backend expertise. It includes secure user login, email verification, password reset flows, and demonstrates how we build scalable, secure auth logic for any application.",
+  },
+  {
+    id: 4,
+    title: "Milango ya Tumaini",
+    category: "Web Apps",
+    tech: ["React", "Tailwind CSS"],
+    img: "",
+    link: "https://example.com",
+    description:
+      "A complete revamp of a non-profit's site — evolved from a basic landing page into a modern, responsive web experience. We integrated essential tools, streamlined the layout, and empowered them to better connect with their community.",
+  },
+  {
+    id: 5,
+    title: "Six Point Victoria",
+    category: "Brand & Strategy",
+    tech: ["UI/UX", "Marketing Strategy"],
+    img: "",
+    link: "https://example.com",
+    description:
+      "We reimagined Six Point Victoria’s entire brand presence, starting with a modern website redesign and extending to digital marketing strategy. The transformation led to higher conversions and improved guest engagement across digital platforms.",
+  },
+  {
+    id: 6,
+    title: "Lablab Studios",
+    category: "Brand Identity",
+    tech: ["NextJs", "Typescript"],
+    img: "",
+    link: "https://example.com",
+    description:
+      "Our own creative wing — focused on high-end brand design, visual storytelling, and creative direction for startups, studios, and visionaries. Currently under development as a dedicated platform.",
+  },
+];
+
+export const caseStudies = [
+  {
+    id: 1,
+    title: "Acorn Designs",
+    category: "UI/UX",
+    tech: ["Figma"],
+    img: "",
+    link: "/projects/acorn",
+    description:
+      "A full-scale website design project aimed at building Acorn’s online presence from the ground up. Our UI/UX approach improved their digital footprint, led to stronger brand engagement, and contributed to noticeable growth in user activity.",
+  },
+  {
+    id: 2,
+    title: "Step254",
+    category: "UI/UX",
+    tech: ["Figma"],
+    img: "",
+    link: "/projects/step-254",
+    description:
+      "A mobile app design connecting users with curated mitumba shoes online. The experience is being crafted to feel fluid, trustworthy, and fun — tailored to a young Kenyan audience. Full case study coming soon.",
   },
 ];
