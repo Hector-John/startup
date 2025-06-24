@@ -39,13 +39,13 @@ const Team = () => {
 
     const teamMembers = [
         {
-            name: "Hakheem Odhiambo",
-            role: "Frontend Developer & UI/UX Designer",
+            name: "Juan Hakheem",
+            role: "Frontend Developer",
             description: "Specializes in creating responsive, accessible user interfaces and crafting intuitive user experiences with modern frameworks.",
-            image: "/placeholder.png",
-            linkedin: "https://linkedin.com/in/hakheem",
-            github: "https://github.com/hakheem",
-            portfolio: "https://kheem.tech",
+            image: "/Hector.png",
+            linkedin: "https://www.linkedin.com/in/john-hector/",
+            github: "https://github.com/Hector-John",
+            portfolio: "https://hector-john.vercel.app/",
         },
         {
             name: "Joy Njeri",
@@ -75,7 +75,7 @@ const Team = () => {
             globe: "https://dianawambui.com",
         },
         {
-            name: "Mark Kimani",
+            name: "James CJ",
             role: "Backend Engineer",
             description: "Designs and implements high-performance server architectures, APIs, and database systems with security and scalability in mind.",
             image: "/placeholder.png",

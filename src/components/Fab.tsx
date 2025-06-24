@@ -31,10 +31,10 @@ export default function FloatingHelp() {
         {/* Email */}
         <Button
           onClick={() => window.open('mailto:hello@kheemtech.com')}
-          className="w-12 h-12 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:bg-blue-500/20 hover:text-blue-300 hover:border-blue-400/30 flex items-center justify-center transition-all"
+          className="w-12 h-12 rounded-full bg-blue-500/10 text-white border border-blue-500/20 hover:bg-blue-500/20  hover:border-blue-400/30 flex items-center justify-center transition-all"
           aria-label="Email"
         >
-          <Mail className="w-5 h-5" />
+          <Mail className="w-5 h-5 text-white "  />
         </Button>
       </div>
 

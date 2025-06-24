@@ -30,7 +30,7 @@ export const testimonialData = [
     rating: 5,
   },
   {
-    name: "Yvonne Dion",
+    name: "Yvonne",
     role: "Coordinator",
     company: "M.Y.T.O",
     icon: <FaHandsHelping />,
@@ -143,7 +143,7 @@ export const developedProjects = [
     title: "East Side Street Wear",
     category: "Web Apps",
     tech: ["React", "MongoDB", "PayPal", "M-Pesa"],
-    img: "/eastside.png",
+    img: "/east.png",
     link: "https://east-side-urban-frontend.onrender.com/",
     description:
       "A fully functional fashion e-commerce website offering clothes, shoes, and jewelry. Built using the MERN stack, the platform supports secure payments via PayPal and M-Pesa, providing a smooth and responsive shopping experience for modern streetwear lovers.",
@@ -153,10 +153,10 @@ export const developedProjects = [
     title: "Trendify",
     category: "Web Apps",
     tech: ["React", "MongoDB", "Stripe"],
-    img: "",
+    img: "/trendify.png",
     link: "https://trendi-fy.netlify.app/",
     description:
-      "An exclusive footwear delivery platform built with the MERN stack and Stripe for payments. Users can browse trending sneakers, order instantly, and enjoy seamless delivery — built for speed, style, and simplicity.",
+      "An exclusive footwear delivery platform built with the MERN stack and Stripe for payments. Users can browse trending sneakers, order instantly, and enjoy seamless delivery, built for speed, style, and simplicity.",
   },
   {
     id: 3,
@@ -176,7 +176,7 @@ export const developedProjects = [
     img: "/myto.png",
     link: "https://my-ngo.vercel.app/",
     description:
-      "A complete revamp of a non-profit's site — evolved from a basic landing page into a modern, responsive web experience. We integrated essential tools, streamlined the layout, and empowered them to better connect with their community.",
+      "A complete revamp of a non-profit's site: evolved from a basic landing page into a modern, responsive web experience. We integrated essential tools, streamlined the layout, and empowered them to better connect with their community.",
   },
   {
     id: 5,
@@ -193,10 +193,10 @@ export const developedProjects = [
     title: "Lablab Studios",
     category: "Brand Identity",
     tech: ["NextJs", "Typescript"],
-    img: "",
+    img: "/soonn.png",
     link: "https://volcan-tech.vercel.app/",
     description:
-      "Our own creative wing — focused on high-end brand design, visual storytelling, and creative direction for startups, studios, and visionaries. Currently under development as a dedicated platform.",
+      "Our own creative wing focused on high-end brand design, visual storytelling, and creative direction for startups, studios, and visionaries. Currently under development as a dedicated platform.",
   },
 ];
 
@@ -219,6 +219,6 @@ export const caseStudies = [
     img: "",
     link: "/projects/step-254",
     description:
-      "A mobile app design connecting users with curated mitumba shoes online. The experience is being crafted to feel fluid, trustworthy, and fun — tailored to a young Kenyan audience. Full case study coming soon.",
+      "A mobile app design connecting users with curated mitumba shoes online. The experience is being crafted to feel fluid, trustworthy, and fun, tailored to a young Kenyan audience. Mobile app coming soon.",
   },
 ];
