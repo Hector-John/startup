@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
         {/* Header */}
         <div className="space-y-6 text-center mt-8 mb-14">
           <h1 className="font-heading text-gradient max-w-4xl text-4xl md:text-5xl lg:text-5xl font-medium leading-[1.5] mx-auto">
-            Why choose us?
+            Why Choose Us?
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             We don't just build websites, we create experiences that feel fast,
@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Cards container */}
-        <div className="flex flex-col md:flex-row gap-8 lg:mt-24 px-1">
+        <div className="flex flex-col md:flex-row gap-14 lg:gap-8 lg:mt-24 px-1">
           {whyChooseUsData.map(
             ({ title, highlight, description, icon: Icon }) => (
               <div

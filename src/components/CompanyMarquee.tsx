@@ -44,7 +44,7 @@ const companies: Company[] = [
     industry: "Business Solutions",
     icon: FiBriefcase,
   },
-  { name: "Vitalife", industry: "Healthcare", icon: FiHeart },
+  { name: "Medilop", industry: "Healthcare", icon: FiHeart },
   { name: "Global Routes", industry: "Logistics", icon: FiTruck },
   { name: "Lablab Studios", industry: "Design Agency", icon: FiLayers },
   { name: "IYF Academy", industry: "Education", icon: FiAward },

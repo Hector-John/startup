@@ -6,35 +6,40 @@ import {
   SiFigma,
   SiAdobephotoshop,
   SiAdobeillustrator,
-  SiWebflow,
   SiFramer,
   SiHtml5,
   SiCss3,
   SiJavascript,
   SiReact,
   SiTailwindcss,
-  SiGithub,
-  SiVercel,
+  SiPython,
+  SiMongodb,
+  SiAdobexd,
+  SiNextdotjs,
+  SiWordpress,
 } from "react-icons/si";
+
 import { Box } from "lucide-react";
 
 const designStack = [
   { name: "Figma", icon: SiFigma },
   { name: "Photoshop", icon: SiAdobephotoshop },
   { name: "Illustrator", icon: SiAdobeillustrator },
-  { name: "Webflow", icon: SiWebflow },
+  { name: "Adobe ", icon: SiAdobexd },
   { name: "Framer", icon: SiFramer },
   { name: "Spline", icon: Box },
 ];
 
 const devStack = [
-  { name: "HTML5", icon: SiHtml5 },
-  { name: "CSS3", icon: SiCss3 },
-  { name: "JavaScript", icon: SiJavascript },
+  { name: "Nextjs", icon: SiNextdotjs },
+  { name: "Python", icon: SiPython },
   { name: "React", icon: SiReact },
+  { name: "JavaScript", icon: SiJavascript },
+  { name: "Mongoose", icon: SiMongodb },
   { name: "Tailwind", icon: SiTailwindcss },
-  { name: "GitHub", icon: SiGithub },
-  { name: "Vercel", icon: SiVercel },
+  { name: "Html 5", icon: SiHtml5 },
+  { name: "CSS3", icon: SiCss3 },
+  { name: "Wordpress", icon: SiWordpress },
 ];
 
 const TechCard = ({
@@ -61,7 +66,7 @@ export function TechMarquee() {
   return (
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden gap-4 py-6">
       {/* Design Stack */}
-      <div className="relative w-[70%] mx-auto">
+      <div className="relative lg:w-[70%] w-full mx-auto">
         <Marquee pauseOnHover className="[--duration:35s]">
           {designStack.map(({ name, icon: Icon }) => (
             <TechCard key={name} name={name} Icon={Icon} />
@@ -73,7 +78,7 @@ export function TechMarquee() {
       </div>
 
       {/* Dev Stack*/}
-      <div className="relative w-[95%]">
+      <div className="relative w-full lg:w-[95%]">
         <Marquee reverse pauseOnHover className="[--duration:40s]">
           {devStack.map(({ name, icon: Icon }) => (
             <TechCard key={name} name={name} Icon={Icon} />

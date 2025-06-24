@@ -9,7 +9,7 @@ const Testimonials = () => {
     <div className="lg:min-h-screen padded">
       {/* Header */}
       <div className="space-y-5 text-center mb-14 mt-10">
-        <h1 className="font-heading  text-gradient max-w-4xl text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-medium leading-[1.5] mx-auto">
+        <h1 className="font-heading text-gradient max-w-4xl text-4xl md:text-5xl lg:text-5xl font-bold leading-tight md:leading-[1.25] mx-auto overflow-visible">
           Don't just take our <br className="hidden md:block" />
           word for it
         </h1>
@@ -48,7 +48,7 @@ const Testimonials = () => {
                   </span>
                 </p>
               </div>
-            </div> 
+            </div>
 
             {/* Review Text */}
             <div className=" my-7 flex-grow">

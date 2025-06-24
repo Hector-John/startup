@@ -5,7 +5,7 @@ import Button from "./button";
 
 const BannerCta = () => {
     return (
-        <div className="relative w-full py-24 px-6 md:px-16 lg:px-24 flex items-center justify-center min-h-[350px] overflow-hidden">
+        <div className="relative w-full py-12 md:py-20 px-6 md:px-16 lg:px-24 flex items-center justify-center min-h-[350px] overflow-hidden">
 
 
             {/* Content */}
@@ -18,11 +18,11 @@ const BannerCta = () => {
                     application, or digital solution, we're here to help you succeed.
                 </p>
 
-                <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <div className="flex flex-col sm:flex-row justify-center pb-4 gap-4">
                     {/* Get Quote */}
                     <Button variant='primary' size='lg' className="py-4"  >
                         <FileText className="mr-2 h-5 w-5" />
-                        Get a Quote
+                        Get a free Quote
                     </Button>
 
                     {/* Secondary Button */}

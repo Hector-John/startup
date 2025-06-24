@@ -46,7 +46,7 @@ const HeroSection = () => {
         variants={staggerContainer}
         initial="hidden"
         animate="show"
-        className="relative z-20 h-full flex flex-col items-center justify-center text-center px-4 mt-24 lg:mt-12 sm:px-6 lg:px-8 max-w-5xl mx-auto"
+        className="relative z-20 h-full flex flex-col items-center justify-center text-center px-4 mt-[8rem] lg:mt-12 sm:px-6 lg:px-8 max-w-5xl mx-auto"
       >
         {/* Pill */}
         <motion.div variants={fadeIn}>

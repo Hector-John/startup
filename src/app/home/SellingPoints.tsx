@@ -8,13 +8,13 @@ const SellingPoints = () => {
       <section className="mx-auto padded">
         {/* Header Texts */}
         <div className="space-y-6 text-center mb-14 mt-6">
-          <h1 className="font-heading text-gradient max-w-4xl text-4xl md:text-5xl lg:text-5xl font-bold leading-tight md:leading-[1.25] mx-auto overflow-visible">
-            Your flexible, future-ready <br className="hidden md:block" />
+          <h1 className="font-heading text-gradient max-w-4xl text-4xl md:text-5xl lg:text-5xl font-bold leading-tight md:leading-[1.25] mx-auto overflow-visible"> 
+            Your flexible, future ready <br className="hidden md:block" />
             tech team
           </h1>
-
+ 
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            From sleek interfaces to powerful systems — we design, build, and
+            From sleek interfaces to powerful systems: we design, build, and
             refine digital solutions that adapt to your needs and scale with
             you.
           </p>

@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ToastProvider } from "@/components/ToastProvider"; // ✅ Import the ToastProvider
+import FloatingHelp from "@/components/Fab";
 
 const COMPANY_NAME = "Kheem Tech";
 const BASE_URL = "https://kheem.tech"; // Replace with your actual domain
@@ -123,6 +124,7 @@ export default function RootLayout({
         <ToastProvider>
           <Navbar />
           {children}
+          <FloatingHelp />
           <Footer />
         </ToastProvider>
       </body>

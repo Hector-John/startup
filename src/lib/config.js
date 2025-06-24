@@ -164,7 +164,7 @@ export const developedProjects = [
     category: "Web Apps",
     tech: ["MongoDB", "Express", "React", "Node.js"],
     img: "/auth.png",
-    link: "https://example.com",
+    link: "https://volcan-tech.vercel.app/",
     description:
       "A feature-rich authentication system showcasing Kheem Tech’s backend expertise. It includes secure user login, email verification, password reset flows, and demonstrates how we build scalable, secure auth logic for any application.",
   },
@@ -173,8 +173,8 @@ export const developedProjects = [
     title: "Milango ya Tumaini",
     category: "Web Apps",
     tech: ["React", "Tailwind CSS"],
-    img: "",
-    link: "https://example.com",
+    img: "/myto.png",
+    link: "https://my-ngo.vercel.app/",
     description:
       "A complete revamp of a non-profit's site — evolved from a basic landing page into a modern, responsive web experience. We integrated essential tools, streamlined the layout, and empowered them to better connect with their community.",
   },
@@ -183,8 +183,8 @@ export const developedProjects = [
     title: "Six Point Victoria",
     category: "Brand & Strategy",
     tech: ["UI/UX", "Marketing Strategy"],
-    img: "",
-    link: "https://example.com",
+    img: "/Homepage.png",
+    link: "https://volcan-tech.vercel.app/",
     description:
       "We reimagined Six Point Victoria’s entire brand presence, starting with a modern website redesign and extending to digital marketing strategy. The transformation led to higher conversions and improved guest engagement across digital platforms.",
   },
@@ -194,7 +194,7 @@ export const developedProjects = [
     category: "Brand Identity",
     tech: ["NextJs", "Typescript"],
     img: "",
-    link: "https://example.com",
+    link: "https://volcan-tech.vercel.app/",
     description:
       "Our own creative wing — focused on high-end brand design, visual storytelling, and creative direction for startups, studios, and visionaries. Currently under development as a dedicated platform.",
   },
@@ -206,7 +206,7 @@ export const caseStudies = [
     title: "Acorn Designs",
     category: "UI/UX",
     tech: ["Figma"],
-    img: "",
+    img: "/acorn.png",
     link: "/projects/acorn",
     description:
       "A full-scale website design project aimed at building Acorn’s online presence from the ground up. Our UI/UX approach improved their digital footprint, led to stronger brand engagement, and contributed to noticeable growth in user activity.",

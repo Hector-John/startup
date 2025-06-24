@@ -37,7 +37,7 @@ Everything we create is built for clarity, performance, and long-term value."
 
           {/* Text Content */}
           <div className="space-y-5 ">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gradient leading-tight">
+            <h2 className="text-3xl md:text-3xl lg:text-4xl font-bold text-gradient leading-tight">
               Crafting Tech That Works,<br className="hidden md:block" />{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
                 Beautifully and Intelligently
@@ -171,11 +171,11 @@ Everything we create is built for clarity, performance, and long-term value."
         <Process />
       </div>
       <BannerCta />
-      <div className="padded ">
+      <div className=" lg:padded ">
         <Team />
         <Testimonials />
       </div>
-      <div className="padded my-24 ">
+      <div className=" lg:padded my-24 ">
         <Cta />
       </div>
     </div>

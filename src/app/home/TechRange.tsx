@@ -21,49 +21,50 @@ const TechRange = () => {
       </div>
       <ServicesMarquee />
 
-      {/* Image container */}
-      <div className="relative h-[80vh] w-full my-10 rounded-xl">
+      {/* Image */}
+      <div className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] w-full my-6 md:my-8 lg:my-10 rounded-xl">
         <Image
           src="/contact.jpg"
           alt="Templates"
           fill
-          className="object-cover object-top rounded-xl"
+          className="object-cover  object-top rounded-xl"
           quality={100}
+          sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 85vw, 80vw"
         />
       </div>
 
       {/* Stats Section */}
-      <div className="w-full hidden md:grid grid-cols-1 sm:grid-cols-3 gap-6 py-8">
+      <div className="w-full grid grid-cols-3 gap-3 sm:gap-6 py-6 sm:py-8">
         {/* Stat 1 */}
-        <div className="flex gap-4 items-center justify-center p-4 w-full">
-          <div className="p-5 rounded-full border border-gray-800 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 flex-shrink-0">
+        <div className="flex flex-col sm:flex-row sm:gap-4 items-center justify-center p-2 sm:p-4 w-full">
+          <div className="p-3 sm:p-5 rounded-full border border-gray-800 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 flex-shrink-0">
             <ChartNoAxesCombined size={28} className="text-gray-300" />
           </div>
-          <div className="flex flex-col">
-            <p className="font-medium text-2xl text-gray-100">30%</p>
-            <p className="text-gray-400">More conversions</p>
+          <div className="flex flex-col items-center sm:items-start mt-2 sm:mt-0">
+            <p className="font-medium text-xl sm:text-2xl text-gray-100">30%</p>
+            <p className="text-gray-400 text-sm sm:text-base text-center sm:text-left">More conversions</p>
           </div>
         </div>
 
         {/* Stat 2 */}
-        <div className="flex gap-4 items-center justify-center p-4 w-full">
-          <div className="p-5 rounded-full border border-gray-800 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 flex-shrink-0">
+        <div className="flex flex-col sm:flex-row sm:gap-4 items-center justify-center p-2 sm:p-4 w-full">
+          <div className="p-3 sm:p-5 rounded-full border border-gray-800 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 flex-shrink-0">
             <MousePointerClick size={28} className="text-gray-300" />
           </div>
-          <div className="flex flex-col">
-            <p className="font-medium text-2xl text-gray-100">50%</p>
-            <p className="text-gray-400">More engagement</p>
+          <div className="flex flex-col items-center sm:items-start mt-2 sm:mt-0">
+            <p className="font-medium text-xl sm:text-2xl text-gray-100">50%</p>
+            <p className="text-gray-400 text-sm sm:text-base text-center sm:text-left">More engagement</p>
           </div>
         </div>
 
         {/* Stat 3 */}
-        <div className="flex gap-4 items-center justify-center p-4 w-full">
-          <div className="p-5 rounded-full border border-gray-800 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 flex-shrink-0">
+        <div className="flex flex-col sm:flex-row sm:gap-4 items-center justify-center p-2 sm:p-4 w-full">
+          <div className="p-3 sm:p-5 rounded-full border border-gray-800 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 flex-shrink-0">
             <MousePointerClick size={28} className="text-gray-300" />
           </div>
-          <div className="flex flex-col">
-            <p className="font-medium text-2xl text-gray-100">97%</p>
-            <p className="text-gray-400">Customer satisfaction</p>
+          <div className="flex flex-col items-center sm:items-start mt-2 sm:mt-0">
+            <p className="font-medium text-xl sm:text-2xl text-gray-100">97%</p>
+            <p className="text-gray-400 text-sm sm:text-base text-center sm:text-left">Customer satisfaction</p>
           </div>
         </div>
       </div>
