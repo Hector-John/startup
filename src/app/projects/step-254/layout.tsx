@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Step254 Case Study | Kheem Tech",
   description:
     "Step254 is a curated mitumba shoe delivery app designed to solve trust and access issues in Kenya’s second-hand footwear market.",
-  keywords: [
+  keywords: [ 
     "Step254",
     "mitumba app Kenya",
     "second-hand shoe delivery",
@@ -46,6 +46,17 @@ export const metadata: Metadata = {
 export default function Step254Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+
+   <head>
+        <link
+          rel="preload"
+          href="/_next/static/media/your-font-file.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
+
       <body className="min-h-screen font-sans antialiased bg-black text-white">
         {children}
       </body>

@@ -31,7 +31,8 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-4 left-0 right-0 z-50 mx-auto animate-fade-in">
-      <nav className="mx-auto max-w-6xl px-4 sm:px-6 py-2 bg-[#121212] border border-gray-700/50 rounded-xl w-[92.5%] sm:w-full">
+     <nav className="mx-auto max-w-6xl px-4 sm:px-6 py-2 bg-[#121212] border border-gray-700/50 rounded-xl w-[92.5%] md:w-[93%] lg:w-full">
+
 
         <div className="flex items-center justify-between">
           {/* Logo */}
