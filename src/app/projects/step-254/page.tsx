@@ -5,12 +5,9 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Heading from "@/components/ui/header";
-import Button from "@/components/button";
+import {motion} from 'framer-motion'
 
 
-// const wireframes = [1, 2, 3, 4, 5, 6];
-const flows = [1, 2];
 const wireframes = [
   "wireframe1.png",
   "wireframe2.png",
@@ -18,6 +15,90 @@ const wireframes = [
   "wireframe4.png",
   "wireframe5.png",
   "wireframe6.png"
+];
+
+const userFlows = [
+  {
+    title: "User Flow Chart",
+    description: "Visualizes the full user journey — from landing on the app to placing an order, highlighting decisions and touchpoints.",
+    image: "/flow-chart.png",
+    fallback: "/placeholder.png"
+  },
+  {
+    title: "Task Flow",
+    description: "Breaks down specific user goals like searching, filtering, and buying shoes into streamlined, step-by-step interactions.",
+    image: "/task-flow.png",
+    fallback: "/placeholder.png"
+  },
+  {
+    title: "Site Map",
+    description: "Outlines all key app screens and their connections, ensuring a clear and intuitive navigation experience.",
+    image: "/sitemap.png",
+    fallback: "/placeholder.png"
+  },
+  {
+    title: "Information Architecture",
+    description: "Defines how content is grouped, labeled, and accessed, making it easier for users to find what they need quickly.",
+    image: "/ia-diagram.png",
+    fallback: "/placeholder.png"
+  }
+];
+
+const featuresData = [
+  {
+    title: "Smart Search",
+    description: "Quickly filter by size, brand, condition, and price to find exactly what you need, no market digging, no wasted time",
+    icon: (
+      <svg className="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+      </svg>
+    )
+  },
+  {
+    title: "Flexible Payments",
+    description: "Pay via M-Pesa, card, or crypto options, because convenience means meeting users where they are",
+    icon: (
+      <svg className="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+      </svg>
+    )
+  },
+  {
+    title: "Live Tracking",
+    description: "Track your order from pickup to delivery in real time, so you stay informed and never feel left in the dark",
+    icon: (
+      <svg className="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+      </svg>
+    )
+  },
+  {
+    title: "Wishlists",
+    description: "Save shoes you love and revisit them later, perfect for browsing on the go or waiting for payday",
+    icon: (
+      <svg className="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+      </svg>
+    )
+  },
+  {
+    title: "Verified Quality",
+    description: "Each shoe is inspected and photographed before listing, so buyers can trust what they see is what they get",
+    icon: (
+      <svg className="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+      </svg>
+    )
+  },
+  {
+    title: "Size Matching",
+    description: "Listings include actual measurements to help you pick a perfect fit, avoiding disappointment or costly returns",
+    icon: (
+      <svg className="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+    )
+  }
 ];
 
 const Step254CaseStudy = () => {
@@ -60,8 +141,8 @@ const Step254CaseStudy = () => {
     <main className="text-white ">
 
       {/* Header Texts */}
-      <div className="space-y-6 text-center my-24 lg:my-16 lg:mt-40">
-        <h1 className="font-heading text-gradient max-w-4xl text-4xl md:text-5xl lg:text-5xl font-bold leading-tight md:leading-[1.25] mx-auto overflow-visible">
+      <div className="space-y-4 text-center  my-28 lg:my-16 lg:mt-36">
+        <h1 className="font-heading text-gradient max-w-4xl text-4xl md:text-5xl lg:text-5xl font-bold leading-tight md:leading-[1.25] lg:pb-1 mx-auto overflow-visible">
           Step 254
         </h1>
 
@@ -254,7 +335,7 @@ const Step254CaseStudy = () => {
                 avatar: "👩‍👧",
                 need: "Juggles business, parenting, and church with no time to visit physical stalls or gamble on shoe quality.",
                 help: "Filters by size/style, buys multiple pairs in one order, and receives them at home, all without stepping out.",
-                color: "amber"
+                color: "green"
               }
             ].map((persona, index) => (
               <div
@@ -307,7 +388,6 @@ const Step254CaseStudy = () => {
           </div>
         </section>
 
-
         {/* WIREFRAMES */}
         <section className="max-w-6xl px-4 mx-auto my-24 lg:my-32">
           <div className="text-left lg:text-center mb-12 lg:mb-8">
@@ -341,159 +421,323 @@ const Step254CaseStudy = () => {
           </div>
         </section>
 
-        
-
         {/* USER FLOWS */}
-        <section className="space-y-8 max-w-6xl mx-auto">
-          <div className="space-y-4">
-            <h2 className="text-3xl font-bold text-white">User Flows</h2>
-            <p className="text-gray-300 leading-relaxed max-w-3xl">
-              We mapped end-to-end flows — from browsing to delivery — to minimize friction and support repeat use.
+        <section className="max-w-6xl px-4 mx-auto my-24 lg:my-32">
+          <div className="lg:text-center text-left mb-12 ">
+            <h2 className="text-4xl font-bold text-gradient lg:pb-1 font-heading mb-3">
+              Mapping the Journey
+            </h2>
+            <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
+              We visualized every touchpoint to create seamless experiences from discovery to delivery.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            {flows.map((n) => (
-              <div key={n} className="rounded-xl overflow-hidden border border-gray-800/50 shadow-lg shadow-blue-500/10">
-                <Image
-                  src="/placeholder.png"
-                  alt={`User Flow ${n}`}
-                  width={700}
-                  height={500}
-                  className="w-full object-cover"
-                />
+
+          <div className="space-y-16 md:space-y-20">
+            {userFlows.map((flow, index) => (
+              <div
+                key={index}
+                className={`grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8 items-center ${index % 2 === 0 ? '' : 'lg:[&>*:nth-child(1)]:order-2 lg:[&>*:nth-child(2)]:order-1'
+                  }`}
+              >
+                {/* Text Content */}
+                <div className="lg:col-span-1 space-y-4">
+                  <div className="flex items-center gap-3">
+                    <div className={`w-3 h-3 rounded-full ${index % 2 === 0 ? 'bg-cyan-400' : 'bg-purple-400'
+                      }`}></div>
+                    <h3 className="text-xl font-semibold text-white">{flow.title}</h3>
+                  </div>
+                  <p className="text-gray-400 pl-6">{flow.description}</p>
+                </div>
+
+                {/* Image */}
+                <div className="lg:col-span-3 relative group">
+                  <div className="aspect-[16/9] w-full rounded-xl overflow-hidden border border-gray-700/50 shadow-lg">
+                    <Image
+                      src={flow.image}
+                      alt={flow.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = flow.fallback;
+                      }}
+                    />
+                  </div>
+                  <div className={`absolute inset-0 -z-10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${index % 2 === 0 ? 'bg-cyan-900/10' : 'bg-purple-900/10'
+                    }`}></div>
+                </div>
               </div>
             ))}
           </div>
         </section>
 
-        {/* FEATURES */}
-        <section className="space-y-8 max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-white">Key App Features</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-blue-900/20 to-transparent p-8 rounded-xl border border-blue-800/50">
-              <h3 className="text-2xl font-bold text-blue-400 mb-4">For Buyers</h3>
-              <ul className="space-y-3">
-                {[
-                  "Curated listings with filters for size, brand, and price",
-                  "Secure payments via M-Pesa and card",
-                  "Real-time tracking and delivery updates",
-                  "Saved searches and favorites"
-                ].map((feature, index) => (
-                  <li key={index} className="flex items-start">
-                    <span className="text-blue-400 mr-2">•</span>
-                    <span className="text-gray-300">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-gradient-to-br from-cyan-900/20 to-transparent p-8 rounded-xl border border-cyan-800/50">
-              <h3 className="text-2xl font-bold text-cyan-400 mb-4">For Admins</h3>
-              <ul className="space-y-3">
-                {[
-                  "Inventory upload and editing",
-                  "Order and delivery management tools",
-                  "Analytics dashboard with customer insights",
-                  "Seller performance tracking"
-                ].map((feature, index) => (
-                  <li key={index} className="flex items-start">
-                    <span className="text-cyan-400 mr-2">•</span>
-                    <span className="text-gray-300">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* PITCH + ROADMAP */}
-        <section className="space-y-8 max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-white">Investor Pitch</h2>
-          <div className="bg-gradient-to-br from-gray-900/50 to-transparent p-8 rounded-xl border border-gray-800/50">
-            <p className="text-gray-300 text-lg leading-relaxed">
-              Step254 fills a gap in Kenya's e-commerce space by offering the first dedicated mitumba shoe
-              delivery platform. We blend digital shopping, trust, and affordability — unlocking a massive
-              underserved market.
+        {/* FEATURES SECTION */}
+        <section className="max-w-5xl px-4 mx-auto my-24 lg:my-32">
+          <div className="text-left lg:text-center mb-12 lg:mb-16">
+            <h2 className="text-4xl font-bold text-gradient font-heading mb-2">
+              Key Features
+            </h2>
+            <p className="text-gray-400 max-w-3xl mx-0 lg:mx-auto">
+              Step 254 puts Kenya's best mitumba finds at your fingertips, built with features that simplify shopping, boost trust, and save time.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-900/30 p-6 rounded-xl border border-gray-800/50">
-              <h3 className="text-2xl font-bold text-blue-400 mb-4">Revenue Model</h3>
-              <ul className="space-y-3">
-                {[
-                  "Resell with sustainable margins",
-                  "Delivery fees and upsells",
-                  "Premium buyer features (early access, express delivery)",
-                  "Seller subscription plans"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start">
-                    <span className="text-blue-400 mr-2">•</span>
-                    <span className="text-gray-300">{item}</span>
-                  </li>
+
+          {/* Mobile Horizontal Scroll */}
+          <div className="md:hidden relative overflow-hidden">
+            <div className="pb-4 -mx-4 px-4 overflow-x-auto no-scrollbar touch-pan-x">
+              <div className="inline-flex space-x-4 w-max">
+                {featuresData.map((feature, index) => (
+                  <div
+                    key={index}
+                    className="inline-block w-[80vw] flex-shrink-0 group bg-gradient-to-br from-gray-900/50 to-gray-900/0 p-5 rounded-xl border border-gray-700/50 hover:border-blue-400/30 transition-all duration-300"
+                  >
+                    <div className="w-8 h-8 flex items-center justify-center bg-blue-400/10 rounded-lg mb-3 group-hover:bg-blue-400/20 transition-colors">
+                      {feature.icon}
+                    </div>
+                    <h3 className="text-lg font-semibold text-white mb-2">{feature.title}</h3>
+                    <p className="text-gray-400 text-sm">{feature.description}</p>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
-            <div className="bg-gray-900/30 p-6 rounded-xl border border-gray-800/50">
-              <h3 className="text-2xl font-bold text-cyan-400 mb-4">Roadmap</h3>
-              <ul className="space-y-3">
-                {[
-                  "Phase 1: MVP & Supplier Onboarding (3 months)",
-                  "Phase 2: Launch in Nairobi, influencer marketing (6 months)",
-                  "Phase 3: Expansion to other cities (12 months)",
-                  "Phase 4: Additional clothing categories (18 months)"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start">
-                    <span className="text-cyan-400 mr-2">•</span>
-                    <span className="text-gray-300">{item}</span>
-                  </li>
-                ))}
-              </ul>
+            {/* Scroll hint indicator */}
+            <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-black via-gray-black/70 to-transparent pointer-events-none flex items-center justify-end">
+              <svg className="w-5 h-5 text-gray-400 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </div>
           </div>
-        </section>
 
-        {/* METRICS */}
-        <section className="space-y-8 max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-white">Metrics for Success</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { name: "User growth", value: "10K+ MAU" },
-              { name: "Retention", value: "30%+" },
-              { name: "Order frequency", value: "2.5/month" },
-              { name: "NPS Score", value: "50+" }
-            ].map((metric, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-900/50 to-transparent p-6 rounded-xl border border-gray-800/50 text-center">
-                <p className="text-gray-400 text-sm mb-1">{metric.name}</p>
-                <p className="text-2xl font-bold text-cyan-400">{metric.value}</p>
+          {/* Tablet */}
+          <div className="hidden md:grid md:grid-cols-2 lg:hidden gap-6">
+            {featuresData.map((feature, index) => (
+              <div
+                key={index}
+                className="group bg-gradient-to-br from-gray-900/50 to-gray-900/0 p-6 rounded-xl border border-gray-700/50 hover:border-blue-400/30 transition-all duration-300"
+              >
+                <div className="w-10 h-10 flex items-center justify-center bg-blue-400/10 rounded-lg mb-4 group-hover:bg-blue-400/20 transition-colors">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+                <p className="text-gray-400">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop  */}
+          <div className="hidden lg:grid lg:grid-cols-3 gap-6">
+            {featuresData.map((feature, index) => (
+              <div
+                key={index}
+                className="group bg-gradient-to-br from-gray-900/50 to-gray-900/0 p-6 rounded-xl border border-gray-700/50 hover:border-blue-400/30 transition-all duration-300"
+              >
+                <div className="w-10 h-10 flex items-center justify-center bg-blue-400/10 rounded-lg mb-4 group-hover:bg-blue-400/20 transition-colors">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+                <p className="text-gray-400">{feature.description}</p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="max-w-2xl mx-auto text-center space-y-6 py-16">
-          <h2 className="text-3xl font-bold text-white">Want to Learn More?</h2>
-          <p className="text-gray-300 text-lg">
-            Step254 is currently in development. Connect with us to follow our progress.
+        <div className=' max-w-3xl mx-auto text-center  ' >
+          <p className="text-gray-400 leading-relaxed">
+            Step254 is evolving to bring Kenya's mitumba experience into the digital age.
+            Our development journey balances rapid iteration with sustainable growth,
+            ensuring we solve real problems while building for scale.
           </p>
-          <div className="flex justify-center gap-4 pt-4">
-            <a
-              href="https://linkedin.com/company/kheemtech"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-medium transition-colors"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com/kheemtech"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg text-white font-medium transition-colors"
-            >
-              GitHub
-            </a>
+        </div>
+
+        {/* DEVELOPMENT ROADMAP */}
+        <section className="max-w-6xl space-y-6 px-4 mx-auto my-24 lg:my-32">
+          <h2 className="text-4xl font-bold text-gradient my-10 font-heading ">Building the Future of Thrifting</h2>
+          <div className="">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-8 h-8 flex items-center justify-center bg-cyan-400/10 rounded-full">
+                <svg className="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-linear">Our Development Path</h3>
+            </div>
+            <div className="space-y-6">
+              {[
+                {
+                  phase: "Phase 1: Foundation",
+                  timeline: "Months 1-3",
+                  description: "Launching our MVP with core features: curated listings, M-Pesa integration, and Nairobi delivery. Partnering with 20 verified mitumba suppliers to ensure quality inventory.",
+                  milestones: [
+                    "Core app development",
+                    "Supplier onboarding",
+                    "Initial user testing"
+                  ]
+                },
+                {
+                  phase: "Phase 2: Growth",
+                  timeline: "Months 4-9",
+                  description: "Expanding our Nairobi operations with influencer partnerships and localized marketing. Introducing wishlists and improved search filters based on user feedback.",
+                  milestones: [
+                    "Nairobi-wide launch",
+                    "First 5,000 users",
+                    "Community building"
+                  ]
+                },
+                {
+                  phase: "Phase 3: Expansion",
+                  timeline: "Months 10-18",
+                  description: "Bringing Step254 to Mombasa, Kisumu, and Nakuru. Developing our logistics network to ensure reliable nationwide delivery.",
+                  milestones: [
+                    "3 new cities",
+                    "Nationwide delivery",
+                    "Localized experiences"
+                  ]
+                },
+                {
+                  phase: "Phase 4: Evolution",
+                  timeline: "Months 19-24",
+                  description: "Expanding beyond shoes to include complementary categories like jackets and accessories, while maintaining our focus on quality and affordability.",
+                  milestones: [
+                    "New product categories",
+                    "Enhanced seller tools",
+                    "Sustainable scaling"
+                  ]
+                }
+              ].map((phase, index) => (
+                <div key={index} className="group pl-6 border-l-2 border-gray-700 hover:border-cyan-400 transition-colors">
+                  <div className="flex flex-col md:flex-row md:items-center gap-2 mb-2">
+                    <h4 className="text-xl font-semibold text-white">{phase.phase}</h4>
+                    <span className="text-sm text-cyan-400 bg-cyan-400/10 px-2 py-1 rounded-full w-fit">
+                      {phase.timeline}
+                    </span>
+                  </div>
+                  <p className="text-gray-400 mb-3">{phase.description}</p>
+                  <ul className="space-y-2">
+                    {phase.milestones.map((milestone, i) => (
+                      <li key={i} className="flex items-start text-gray-300">
+                        <span className="text-cyan-400 mr-2 mt-1">•</span>
+                        <span>{milestone}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
+
+{/* METRICS */}
+<section className="max-w-6xl px-4 mx-auto my-20 lg:my-28">
+  <div className="text-left lg:text-center mb-12">
+    <h2 className="text-4xl font-bold text-gradient font-heading mb-3">
+      Measuring What Matters
+    </h2>
+    <p className="text-gray-400 text-lg max-w-3xl mx-0 lg:mx-auto">
+      Key indicators that show we're delivering real value to Kenya's thrifters
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    {[
+      {
+        name: "Monthly Active Users",
+        value: "10K+",
+        description: "Building a thriving community of repeat buyers",
+        icon: "👥",
+        color: "blue"
+      },
+      {
+        name: "Retention Rate",
+        value: "30%+",
+        description: "Customers who keep coming back monthly",
+        icon: "🔄",
+        color: "cyan"
+      },
+      {
+        name: "Order Frequency",
+        value: "2.5/month",
+        description: "Average purchases per active user",
+        icon: "📦",
+        color: "purple"
+      },
+      {
+        name: "Net Promoter Score",
+        value: "50+",
+        description: "Users likely to recommend us",
+        icon: "❤️",
+        color: "pink"
+      }
+    ].map((metric, index) => (
+      <div
+        key={index}
+        className={`group bg-gradient-to-br from-gray-900/50 to-gray-900/0 p-6 rounded-xl border border-gray-700/50 hover:border-${metric.color}-400/30 transition-all duration-300 hover:shadow-lg`}
+      >
+        <div className="flex flex-col items-center text-center">
+          <span className="text-2xl mb-3 p-2 bg-gray-800/50 rounded-lg group-hover:bg-${metric.color}-400/10 transition-colors">
+            {metric.icon}
+          </span>
+          <h3 className="text-3xl font-bold text-${metric.color}-400 mb-2">
+            {metric.value}
+          </h3>
+          <p className="text-gray-300 font-medium mb-1">{metric.name}</p>
+          <p className="text-gray-400 text-sm">{metric.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+{/* CLOSING SECTION */}
+<section className="max-w-4xl px-4 mx-auto my-24 lg:my-32">
+  <div className="text-center">
+    <motion.h2 
+      className="text-4xl font-bold text-gradient font-heading mb-6"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
+      The Future of Thrifting
+    </motion.h2>
+    
+    <motion.div
+      className="space-y-6 max-w-2xl mx-auto"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.2, duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <p className="text-gray-400 text-lg leading-relaxed">
+        Step 254 represents a fundamental shift in Kenya's second-hand economy. 
+        We're building more than an app, we're creating a new standard for accessible, 
+        trustworthy fashion that celebrates both sustainability and personal style.
+      </p>
+      
+      <div className="border-t border-gray-800/50 pt-6">
+        <p className="text-gray-400 mb-4">
+          Interested in our journey or have ideas to share?
+        </p>
+        <a
+          href="mailto:hakheem67@gmail.com"
+          className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-500 transition-colors group"
+        >
+          <span>Get in touch</span>
+          <svg 
+            className="w-4 h-4 transition-transform group-hover:translate-x-1"
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke="currentColor"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </motion.div>
+  </div>
+</section>
+
+
+      
       </div>
 
     </main>
