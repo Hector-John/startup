@@ -9,12 +9,16 @@ import {motion} from 'framer-motion'
 
 
 const wireframes = [
-  "wireframe1.png",
-  "wireframe2.png",
-  "wireframe3.png",
-  "wireframe4.png",
-  "wireframe5.png",
-  "wireframe6.png"
+  "/splash.png",
+  "/phone_login.png",
+  "/email_login.png",
+  "/step_home.png",
+  "/step_details.png",
+  "/Product_Listing.png", 
+  "/Cart.png",
+  "/empty_cart.png",
+  "/checkout.png",
+  "/empty_cart.png",
 ];
 
 const userFlows = [
@@ -388,38 +392,40 @@ const Step254CaseStudy = () => {
           </div>
         </section>
 
-        {/* WIREFRAMES */}
-        <section className="max-w-6xl px-4 mx-auto my-24 lg:my-32">
-          <div className="text-left lg:text-center mb-12 lg:mb-8">
-            <h2 className="text-4xl font-bold text-gradient font-heading mb-3">
-              From Sketches to Structure
-            </h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
-              Our wireframes established the app's core flow: from discovery to delivery, focusing on Kenya's unique mobile commerce behaviors.
-            </p>
+      
+      {/* WIREFRAMES */}
+<section className="max-w-6xl px-4 mx-auto my-24 lg:my-32">
+  <div className="text-left lg:text-center mb-12 lg:mb-8">
+    <h2 className="text-4xl font-bold text-gradient font-heading mb-3">
+      From Sketches to Structure
+    </h2>
+    <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
+      Our wireframes established the app's core flow: from discovery to delivery, focusing on Kenya's unique mobile commerce behaviors.
+    </p>
+  </div>
+  <div className="rounded-xl">
+    <Slider {...wireframeSettings}>
+      {wireframes.map((imgPath, index) => (
+        <div key={index} className="px-2">
+          <div className="relative aspect-[9/16] rounded-xl overflow-hidden">
+            <Image
+              src={imgPath}
+              alt={`Wireframe screen ${index + 1}`}
+              fill
+              className="object-cover object-top"
+              sizes="(max-width: 640px) 100vw, 
+                     (max-width: 768px) 50vw, 
+                     (max-width: 1024px) 33vw,
+                     25vw"
+              quality={90}
+            />
           </div>
-          <div className="rounded-xl">
-            <Slider {...wireframeSettings}>
-              {wireframes.map((img, index) => (
-                <div key={index} className="px-2">
-                  <div className="rounded-xl overflow-hidden" style={{ height: '480px' }}>
-                    <Image
-                      src={`/${img}`}
-                      alt={`Wireframe screen ${index + 1}`}
-                      width={320}
-                      height={480}
-                      className="w-full h-full object-contain"
-                      sizes="(max-width: 640px) 90vw,
-                   (max-width: 768px) 45vw,
-                   (max-width: 1024px) 30vw,
-                   320px"
-                    />
-                  </div>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </section>
+        </div>
+      ))}
+    </Slider>
+  </div>
+</section>
+
 
         {/* USER FLOWS */}
         <section className="max-w-6xl px-4 mx-auto my-24 lg:my-32">
@@ -736,8 +742,6 @@ const Step254CaseStudy = () => {
   </div>
 </section>
 
-
-      
       </div>
 
     </main>

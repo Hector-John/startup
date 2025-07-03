@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Step254 Case Study | Kheem Tech",
+    title: "Acorn Case Study | Kheem Tech",
     description:
       "A curated second-hand shoe shopping app, built with purpose. Designed by Kheem Tech.",
     images: [`${BASE_URL}/og-image.jpg`],
